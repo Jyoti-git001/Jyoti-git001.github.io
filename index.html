@@ -4,8 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sushree Jyotirmayee Mallick | DevOps Engineer</title>
+<title>Sushree Jyotirmayee | Portfolio</title>
 
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -13,7 +14,7 @@
 body {
   background:#0b1220;
   color:#fff;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
@@ -21,37 +22,26 @@ body {
 }
 
 .hero {
-  padding:100px 0;
-  text-align:center;
+  height:100vh;
+  display:flex;
+  align-items:center;
 }
 
-.btn-main {
+.btn-custom {
   background:#0078D4;
-  color:white;
-  border:none;
-}
-
-.btn-main:hover {
-  background:#005fa3;
-}
-
-.section {
-  padding:70px 0;
+  color:#fff;
 }
 
 .card {
-  background:#111a2e;
+  background:#111c33;
   border:none;
-}
-
-input, textarea {
-  background:#1b2640 !important;
-  border:none !important;
-  color:white !important;
+  color:#fff;
 }
 
 footer {
-  background:#0b1220;
+  background:#111c33;
+  padding:20px;
+  text-align:center;
 }
 </style>
 </head>
@@ -59,114 +49,139 @@ footer {
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-<div class="container">
-<a class="navbar-brand fw-bold">SJM</a>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand">SJM</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-<div class="container">
-<h1 class="fw-bold">Sushree Jyotirmayee Mallick</h1>
-<p class="text-info">Azure DevOps Engineer</p>
+<section id="home" class="hero container">
+  <div>
+    <h1>Sushree Jyotirmayee</h1>
+    <h4 id="role"></h4>
+    <p>Azure DevOps Engineer | Cloud | CI/CD</p>
 
-<div class="mt-4 d-flex justify-content-center gap-3 flex-wrap">
+    <a href="#projects" class="btn btn-custom">View Work</a>
 
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com"
-   target="_blank" class="btn btn-main">
-   <i class="bi bi-envelope"></i> Email
-</a>
+    <div class="mt-3">
+      <a href="https://github.com/Jyoti-git001" target="_blank" class="text-white me-3">
+        <i class="bi bi-github"></i>
+      </a>
 
-<a href="https://linkedin.com/in/sushree-jyotirmayee-mallick"
-   target="_blank" class="btn btn-outline-light">
-   <i class="bi bi-linkedin"></i> LinkedIn
-</a>
+      <a href="https://linkedin.com/in/sushree-jyotirmayee-mallick" target="_blank" class="text-white me-3">
+        <i class="bi bi-linkedin"></i>
+      </a>
 
-<a href="https://github.com/Jyoti-git001"
-   target="_blank" class="btn btn-outline-light">
-   <i class="bi bi-github"></i> GitHub
-</a>
-
-</div>
-</div>
+      <!-- FIXED MAIL -->
+      <a href="mailto:sushreejyotirmayee59@gmail.com" class="text-white">
+        <i class="bi bi-envelope"></i>
+      </a>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section bg-dark text-center">
-<div class="container">
-<h2>About Me</h2>
-<p class="mt-3">
-Passionate Azure DevOps Engineer focused on CI/CD pipelines, cloud automation, and scalable deployments.
-</p>
-</div>
+<section id="about" class="container py-5">
+  <h2>About Me</h2>
+  <p>
+    I am an Azure DevOps Engineer passionate about CI/CD, cloud, and automation.
+  </p>
 </section>
 
 <!-- PROJECTS -->
-<section class="section">
-<div class="container">
-<h2 class="text-center mb-4">Projects</h2>
+<section id="projects" class="container py-5">
+  <h2>Projects</h2>
 
-<div class="row g-4">
+  <div class="row">
 
-<div class="col-md-4">
-<div class="card p-3">
-<h5>CI/CD Pipeline</h5>
-<p>Azure DevOps pipeline with automated deployment.</p>
-</div>
-</div>
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>CI/CD Pipeline</h5>
+        <p>Azure pipeline project</p>
+        <a href="https://github.com/Jyoti-git001" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<div class="col-md-4">
-<div class="card p-3">
-<h5>Terraform Infrastructure</h5>
-<p>Provisioned Azure resources using Terraform.</p>
-</div>
-</div>
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>Terraform Infra</h5>
+        <p>Azure infrastructure setup</p>
+        <a href="https://github.com/Jyoti-git001" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-<div class="col-md-4">
-<div class="card p-3">
-<h5>Kubernetes Deployment</h5>
-<p>Containerized app deployed using Docker & AKS.</p>
-</div>
-</div>
+    <div class="col-md-4">
+      <div class="card p-3">
+        <h5>Docker App</h5>
+        <p>Containerized application</p>
+        <a href="https://github.com/Jyoti-git001" target="_blank">GitHub</a>
+      </div>
+    </div>
 
-</div>
-</div>
+  </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section bg-dark">
-<div class="container">
-<h2 class="text-center mb-4">Contact Me</h2>
+<section id="contact" class="container py-5">
+  <h2>Contact</h2>
 
-<div class="row justify-content-center">
-<div class="col-md-6">
+  <form onsubmit="sendMail(event)">
+    <input type="text" id="name" class="form-control mb-2" placeholder="Your Name" required>
+    <input type="email" id="email" class="form-control mb-2" placeholder="Your Email" required>
+    <textarea id="message" class="form-control mb-2" placeholder="Message" required></textarea>
 
-<form action="https://formspree.io/f/YOUR_ID" method="POST">
-
-<input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
-
-<input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
-
-<input type="text" name="subject" class="form-control mb-3" placeholder="Subject">
-
-<textarea name="message" class="form-control mb-3" rows="5" placeholder="Message" required></textarea>
-
-<button type="submit" class="btn btn-main w-100">
-  <i class="bi bi-send"></i> Send Message
-</button>
-
-</form>
-
-</div>
-</div>
-</div>
+    <button class="btn btn-custom">Send</button>
+  </form>
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center py-3">
-<p>© 2026 Sushree Jyotirmayee Mallick</p>
+<footer>
+  <p>© 2026 Sushree Jyotirmayee</p>
 </footer>
+
+<!-- JS -->
+<script>
+/* TYPEWRITER */
+const roles = ["Azure DevOps Engineer","Cloud Engineer","CI/CD Specialist"];
+let i=0;
+
+function changeRole(){
+  document.getElementById("role").innerText = roles[i];
+  i = (i+1) % roles.length;
+}
+setInterval(changeRole,2000);
+
+
+/* MAIL FUNCTION (FIXED) */
+function sendMail(e){
+  e.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  let subject = "Portfolio Contact";
+  let body = "Name: "+name+"%0AEmail: "+email+"%0A%0AMessage: "+message;
+
+  window.location.href = `mailto:sushreejyotirmayee59@gmail.com?subject=${subject}&body=${body}`;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

@@ -530,7 +530,7 @@
           <li class="nav-item"><a class="nav-link" href="#projects"><span class="nav-num">04.</span>Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact"><span class="nav-num">05.</span>Contact</a></li>
           <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-            <a href="mailto:sushreejyotirmayee59@gmail.com" class="btn-hire">Hire Me</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail>Hire Me</a>
           </li>
         </ul>
       </div>
@@ -571,8 +571,12 @@
           <div class="hero-social">
             <a href="https://github.com/Jyoti-git001" target="_blank" class="social-link"><i class="bi bi-github"></i></a>
             <a href="https://linkedin.com/in/sushree-jyotirmayee-mallick" target="_blank" class="social-link"><i class="bi bi-linkedin"></i></a>
-            <a href="mailto:sushreejyotirmayee59@gmail.com" class="social-link"><i class="bi bi-envelope"></i></a>
-            <div class="social-line"></div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com"
+   target="_blank"
+   class="social-link">
+  <i class="bi bi-envelope"></i>
+</a>
+<div class="social-line"></div>
           </div>
         </div>
         <div class="col-lg-5 d-none d-lg-flex justify-content-center">
@@ -627,7 +631,7 @@
             <div class="highlight-item"><i class="bi bi-check-circle-fill"></i><span>Infrastructure as Code using Terraform & Ansible</span></div>
             <div class="highlight-item"><i class="bi bi-check-circle-fill"></i><span>Scripting with Python, Bash & PowerShell</span></div>
           </div>
-          <a href="mailto:sushreejyotirmayee59@gmail.com" class="btn-primary-custom">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail
             <span>Contact Me</span><i class="bi bi-envelope"></i>
           </a>
         </div>
@@ -727,9 +731,12 @@
       <div class="row g-5">
         <div class="col-lg-5 reveal">
           <p class="about-p mb-4">I'm actively looking for Azure DevOps Engineer roles. If you have an opportunity, I'd love to hear from you!</p>
-          <a href="mailto:sushreejyotirmayee59@gmail.com" target="_blank" class="btn-primary-custom justify-content-center">
-<i class="bi bi-envelope-fill"></i>
-  <span>Email Me</span>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com"
+   target="_blank"
+   class="social-link">
+  <i class="bi bi-envelope"></i>
+</a>
+<div class="social-line"></div>
 </a>
           <a href="https://linkedin.com/in/sushree-jyotirmayee-mallick" target="_blank" class="contact-info-item">
             <div class="ci-icon"><i class="bi bi-linkedin"></i></div>
@@ -750,7 +757,7 @@
               The best way to reach me is directly via email or LinkedIn. I typically respond within 24 hours!
             </p>
             <div class="d-flex flex-column gap-3">
-              <a href="mailto:sushreejyotirmayee59@gmail.com" class="btn-primary-custom justify-content-center" style="font-size:0.8rem">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com" class="btn-primary-custom justify-content-center" style="font-size:0.8rem">
                 <i class="bi bi-envelope-fill"></i>
                 <span>sushreejyotirmayee59@gmail.com</span>
               </a>
@@ -778,7 +785,7 @@
         <div class="footer-socials">
           <a href="https://github.com/Jyoti-git001" target="_blank"><i class="bi bi-github"></i></a>
           <a href="https://linkedin.com/in/sushree-jyotirmayee-mallick" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="mailto:sushreejyotirmayee59@gmail.com"><i class="bi bi-envelope"></i></a>
+         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com"<i class="bi bi-envelope"></i></a>
         </div>
       </div>
     </div>
@@ -851,11 +858,24 @@
       const subject = document.getElementById('subjectField').value;
       const message = document.getElementById('messageField').value;
       const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-      window.open(`mailto:sushreejyotirmayee59@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`);
-      const btn = document.getElementById('submitBtn');
-      btn.innerHTML = '<span>Opening Email...</span><i class="bi bi-check-circle-fill"></i>';
-      setTimeout(() => { btn.innerHTML = '<span>Send Message</span><i class="bi bi-send-fill"></i>'; this.reset(); }, 3000);
-    });
+     const subject = document.getElementById('subjectField').value;
+const message = document.getElementById('messageField').value;
+const name = document.querySelector('input[type="text"]').value;
+const email = document.querySelector('input[type="email"]').value;
+
+const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+
+const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=sushreejyotirmayee59@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+window.open(gmailURL, '_blank');
+
+const btn = document.getElementById('submitBtn');
+btn.innerHTML = '<span>Opening Gmail...</span><i class="bi bi-check-circle-fill"></i>';
+
+setTimeout(() => {
+  btn.innerHTML = '<span>Send Message</span><i class="bi bi-send-fill"></i>';
+  document.querySelector('form').reset();
+}, 3000);
   </script>
 </body>
 </html>
